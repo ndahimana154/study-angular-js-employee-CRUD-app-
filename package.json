@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:crud-app": "node dist/crud-app/server/server.mjs",
-    "mock-api": "json-server --watch  db.json"
+    "mock-api": "json-server --watch  db.json",
+    "e2e": "ng e2e"
   },
   "prettier": {
     "printWidth": 100,
@@ -45,9 +46,11 @@
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^21.1.0",
     "@angular/material": "^21.1.0",
+    "@playwright/test": "1.57.0",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "jsdom": "^27.1.0",
+    "playwright-ng-schematics": "^21.0.3",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
